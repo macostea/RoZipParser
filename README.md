@@ -1,4 +1,4 @@
-# Coduri Postale (Zip Codes) Data Parser
+# RO Zip Data Parser
 
 [![Build Status](https://travis-ci.org/macostea/CoduriPostaleDataParser.svg?branch=develop)](https://travis-ci.org/macostea/CoduriPostaleDataParser)
 
@@ -9,7 +9,7 @@ http://data.gov.ro/dataset/coduri-postale-romania
 
 
 ## Installation
-`pip install -r requirements.txt`
+`pip install rozipparser`
 
 ## Usage
 This project can be used standalone to parse and convert the official documents or as a module inside another application.

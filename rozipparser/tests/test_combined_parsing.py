@@ -1,18 +1,19 @@
 # coding=utf-8
 
 import unittest
-from codeparser import CodeParser
+
+from rozipparser.codeparser import CodeParser
 
 
 class TestBucharestParsing(unittest.TestCase):
     def test_number_of_codes(self):
-        parser = CodeParser("tests/inputs/combined_input.xlsx")
+        parser = CodeParser("rozipparser/tests/inputs/combined_input.xlsx")
         codes = parser.get_codes()
 
         self.assertEqual(len(codes), 3)
 
     def test_code_correctness(self):
-        parser = CodeParser("tests/inputs/combined_input.xlsx")
+        parser = CodeParser("rozipparser/tests/inputs/combined_input.xlsx")
         codes = parser.get_codes()
 
         bucharest_code = [x for x in codes if x.county == u"Bucuresti" and x.locality == u"Bucuresti"]
