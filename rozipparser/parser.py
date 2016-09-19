@@ -1,6 +1,7 @@
 import argparse
-from codeparser import CodeParser
 import csv
+
+from rozipparser.codeparser import CodeParser
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Import Romanian postal codes from official xls files")

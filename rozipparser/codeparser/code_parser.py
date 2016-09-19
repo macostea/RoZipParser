@@ -1,5 +1,6 @@
 from openpyxl import load_workbook
-from model import Code
+
+from rozipparser.model import Code
 
 
 class CodeParser:

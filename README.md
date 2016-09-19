@@ -1,4 +1,4 @@
-# Coduri Postale (Zip Codes) Data Parser
+# RO Zip Data Parser
 
 [![Build Status](https://travis-ci.org/macostea/CoduriPostaleDataParser.svg?branch=develop)](https://travis-ci.org/macostea/CoduriPostaleDataParser)
 
