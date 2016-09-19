@@ -2,16 +2,17 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
-
-here = path.abspath(path.dirname(__file__))
-
-with open(path.join(here, "README.md"), encoding="utf-8") as f:
-    long_description = f.read()
+try:
+    import pypandoc
+    long_description = pypandoc.convert("README.md", "rst")
+except(IOError, ImportError):
+    long_description = "Parse official zip code documents from the Romanian Government"
 
 setup(
     name="rozipparser",
-    version="0.2.0",
+    version="0.2.1",
     description="Parse official zip code documents from the Romanian Government",
+    long_description=long_description,
     url="https://github.com/macostea/RoZipParser",
     author="Mihai Costea",
     author_email="mihai.andrei.costea@icloud.com",
