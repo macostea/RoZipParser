@@ -9,7 +9,7 @@ http://data.gov.ro/dataset/coduri-postale-romania
 
 
 ## Installation
-`pip install -r requirements.txt`
+`pip install rozipparser`
 
 ## Usage
 This project can be used standalone to parse and convert the official documents or as a module inside another application.

@@ -10,7 +10,7 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
 
 setup(
     name="rozipparser",
-    version="0.1.1",
+    version="0.2.0",
     description="Parse official zip code documents from the Romanian Government",
     url="https://github.com/macostea/RoZipParser",
     author="Mihai Costea",
